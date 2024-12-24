@@ -1,0 +1,39 @@
+@import '~@progress/kendo-theme-default/dist/all.scss';
+@import '~bootstrap-css-only/css/bootstrap.min.css';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import 'assets/styles/antd/style';
+@import 'assets/styles/bootstrap/style';
+@import 'assets/styles/airui/style';
+@import 'assets/styles/nprogress/style';
+@import 'assets/styles/perfect-scrollbar/style';
+@import "vue-select/src/scss/vue-select.scss";
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+@include scrollbars(.5em, slategray);
+[v-cloak] {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 100%;
+  }
+}

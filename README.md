@@ -1,4 +1,4 @@
-# Air UI Vue Admin Template
+# App FrontEnd Colegio
 
 ## Project setup
 ```
